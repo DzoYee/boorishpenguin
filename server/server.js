@@ -38,7 +38,7 @@ passport.use(new GoogleStrategy({
   clientID: apikeys.googleOauth.clientID,
   clientSecret: apikeys.googleOauth.clientSecret,
   // callbackURL: "https://fathomless-sands-7752.herokuapp.com/auth/google/callback"
-  callbackURL: "http://127.0.0.1:8001/auth/google/callback"
+  callbackURL: "http://glacial-beyond-8542.herokuapp.com/auth/google/callback"
 },
   function(accessToken, refreshToken, profile, done) {
     controllers.isUserInDb(profile.emails[0].value, function (inDb){
