@@ -1,7 +1,7 @@
 var Sequelize = require('sequelize');
 
 
-var database = process.env.DATABASE || 'pithypersimmons';
+var database = process.env.DATABASE || 'mysql://b34e6d612ad7fa:79f05e4d@us-cdbr-iron-east-03.cleardb.net/heroku_6d939c68d418015?reconnect=true';
 var dbUser = process.env.DBUSER || 'root';
 var dbPass = process.env.DBPASS || "student";
 var dbHost = process.env.DBHOST || 'localhost';
